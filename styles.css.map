@@ -1,0 +1,1 @@
+{"version":3,"file":"styles.css","mappings":"AAAA,KACE,kBACA,MACA,OACA,SACA,aACA,sD","sources":["webpack://portfolio/./client/styles/index.scss"],"sourcesContent":["body {\n  position: absolute;\n  top: 0;\n  left: 0;\n  margin: 0;\n  padding: 20px;\n  font: 14px \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n}\n\n\n\n"],"names":[],"sourceRoot":""}

@@ -1,9 +1,9 @@
 function Profile() {
   return (
     <>
-      <div className="flex px-5 py-12 md:flex-row flex-col items-center text-white bg-zinc-600 justify-around">
-        <div className="basis-2/3 flex-initial lg:flex-shrink md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start items-start text-left 	">
-          <h2 className="sm:text-5xl text-3xl pb-12 bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-rose-500 font-oswald font-light self-center	">
+      <div className="flex px-5 py-12 md:flex-row flex-col items-center text-white bg-zinc-600 justify-between">
+        <div className="basis-1/3 flex-initial lg:flex-shrink md:w-1/2 lg:pr-24 md:pr-16 flex flex-col text-left">
+          <h2 className="sm:text-5xl text-3xl pb-12 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-pink-500 font-light self-center	">
             Find Me Online
           </h2>
           <ul className="list-none">
@@ -51,8 +51,25 @@ function Profile() {
             </li>
           </ul>
         </div>
-        <div className="basis-3/4 border-l-4 border-indigo-500 lg:max-w-md lg:w-full lg:flex-grow md:w-1/2  divide-x-4 self-center">
-          <p>About me</p>
+        <div className="basis-2/3 md:border-l-4 pl-2 border-indigo-500 text-base lg:w-full lg:flex-grow md:w-1/2  divide-l-4 self-center">
+          <h2 className="sm:text-5xl text-3xl pb-12 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-pink-500 font-light text-center	">
+            Who am I?
+          </h2>
+          <p className="text-slate-200 text-lg font-medium font-sans">
+            <span className="">I</span>&apos;m Ryan and I&apos;m a web developer
+            with a background in technical support and the social sciences. It
+            was when I started doing web development for a think-tank and began
+            digging into coding and the technical concepts behind what I was
+            doing, that the genuine excitement brought me back to my childhood
+            being around family in tech and I began to dream about what it would
+            be like to do something this fun for a living. I had been angling
+            for more and more technical things roles but that was the moment I
+            said this is it. My passion is for effective altruism, so starting
+            my tax credit guide as a personal project at Dev Academy has been
+            the cherry on top. My aim now is to continue on this path with an
+            eye towards projects that people find useful or help me to grow my
+            skills.
+          </p>
         </div>
       </div>
     </>

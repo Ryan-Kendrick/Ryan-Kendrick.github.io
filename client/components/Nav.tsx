@@ -1,8 +1,8 @@
 function Nav() {
   return (
     <>
-      <header className="relative h-28 text-neutral-50 bg-gradient-to-r from-sky-500 to-indigo-500 w-screen">
-        <div className="h-full w-11/12 md:w-10/12 mx-auto flex flex-wrap py-8 flex-col md:flex-row items-center">
+      <header className="relative h-28 text-neutral-50 bg-gradient-to-r from-sky-500 to-indigo-500 ">
+        <div className="h-full w-11/12 md:w-10/12 mx-auto flex flex-wrap py-8 md:flex-row items-center">
           <img
             className="absolute w-20 h-20 text-white rounded-full ring-2 ring-white hidden md:block"
             src="images/ryan.png"

@@ -8,8 +8,7 @@ node_modules
 *.sqlite3
 
 # Webpack bundle
-build/bundle.js
-build/bundle.js.map
+bundle.*
 
 # Jest coverage report
 coverage/*

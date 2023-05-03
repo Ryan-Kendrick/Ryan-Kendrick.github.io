@@ -1,33 +1,37 @@
-/* eslint-disable jsx-a11y/media-has-caption */
-function Pingpong() {
+function Givecredit() {
   return (
     <>
-      <div className=" bg-orange-500 py-20 text-slate-100 text-lg font-medium font-sans">
-        <h2 className=" text-5xl pb-10 pb-12 text-white text-center font-bold">
-          Projects
-        </h2>
+      <div className="bg-slate-700 py-20 text-slate-100 text-lg font-medium font-sans">
         <div data-aos="fade-in">
           <div className="flex px-5 py-12 lg:flex-row flex-col text-white justify-between shadow-amber-500 shadow-3xl ">
             <div className="basis-1/3 flex-initial lg:flex-shrink md:pb-10 flex flex-col mx-auto ">
-              <h2 className=" text-5xl pb-12 italic text-center">PINGPONG</h2>
+              <h2 className=" text-5xl pb-12 text-center">Give Credit</h2>
               <p>
-                A minimalistic social media app for spontaneous meetups.
-                Frontend application built in React Native for Android and iOS.
+                A tool to streamline and promote charitable giving in New
+                Zealand by combining a tax calculator with a tax credit
+                calculator.
               </p>
               <h3 className="sm:text-2xl text-1xl py-6">Features</h3>
               <ul className="list-disc list-inside">
-                <li>Friends list with pull to refresh functionality</li>
-                <li>Slick animations</li>
-                <li>Google Places location data paired with an activity</li>
-                <li>Start Pinging when you want to meetup</li>
+                <li>
+                  Accurately applies marginal tax rates to calculate PAYE for a
+                  given annual income
+                </li>
+                <li>
+                  Checks if and how much credit to apply when IETC is enabled
+                </li>
+                <li>
+                  Support for KiwiSaver and Student Loans including custom
+                  repayment rates
+                </li>
               </ul>
               <div className="pt-20 mx-auto">
                 <form
-                  action="https://github.com/Ryan-Kendrick/pingpong"
+                  action="https://github.com/Ryan-Kendrick/give-credit"
                   target="_blank"
                 >
                   <span className="inline-block border border-gray-200 bg-gray-200 text-gray-700 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-300 focus:outline-none focus:shadow-outline">
-                    <input type="submit" value="Frontend on GitHub"></input>
+                    <input type="submit" value="View on GitHub"></input>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="inline-block fill-current w-6 h-6 ml-2 mb-1"
@@ -39,15 +43,13 @@ function Pingpong() {
                 </form>
               </div>
             </div>
-            <video
-              className="w-640px h-360px md:w-720px md:h-480px m-auto"
-              width="720"
-              height="480"
-              controls
-            >
-              <source src="video/pingpong.mp4" type="video/mp4"></source>
-              Your browser does not support mp4 video
-            </video>
+            <div className="aspect-w-16 aspect-h-9 lg:aspect-none place-self-center">
+              <img
+                className="w-full h-full object-center object-cover m-auto"
+                src="images/givecredit2.png"
+                alt="give credit"
+              ></img>
+            </div>
           </div>
         </div>
       </div>
@@ -55,4 +57,4 @@ function Pingpong() {
   )
 }
 
-export default Pingpong
+export default Givecredit

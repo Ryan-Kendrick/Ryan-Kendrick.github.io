@@ -1,9 +1,9 @@
 import Nav from './Nav'
-import Pingpong from './Pingpong'
 import Profile from './Profile'
 import Skills from './Skills'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Projects from './Projects'
 
 function App() {
   AOS.init({
@@ -32,7 +32,7 @@ function App() {
       <Nav />
       <Profile />
       <Skills />
-      <Pingpong />
+      <Projects />
     </>
   )
 }

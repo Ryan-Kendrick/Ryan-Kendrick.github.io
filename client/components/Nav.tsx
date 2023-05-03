@@ -8,10 +8,10 @@ function Nav() {
             src="images/ryan.png"
             alt="Ryan"
           ></img>
-          <h1 className="text-3xl pl-20 ml-2 font-bold">
+          <h1 className="text-2xl sm:text-3xl md:pl-20 mx-auto md:ml-2 font-bold">
             Portfolio of Ryan Kendrick
           </h1>
-          <nav className="h-full md:ml-auto font-medium text-lg flex flex-wrap items-center text-base justify-center">
+          <nav className="h-full md:ml-auto md:mr-0 font-medium text-lg flex flex-wrap items-center text-base justify-center mx-auto">
             <a className="mx-4 cursor-pointer transition-all duration-100 hover:scale-110 hover:text-red-500">
               Home
             </a>

@@ -4,7 +4,7 @@ import Veryimportantservice from './Veryimportantservice'
 
 function Projects() {
   return (
-    <div className="divide-y divide-white divide-dashed ">
+    <div id="portfolio" className="divide-y divide-white divide-dashed ">
       <Pingpong />
       <Veryimportantservice />
       <Givecredit />

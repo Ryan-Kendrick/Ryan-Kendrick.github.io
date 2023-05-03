@@ -1,7 +1,7 @@
 function Skills() {
   return (
     <>
-      <div className="bg-slate-100 py-20">
+      <div id="skills" className="bg-slate-100 py-20">
         <h2 className=" text-5xl pb-10 pb-12 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-pink-500 font-light text-center">
           Talents Include:
         </h2>

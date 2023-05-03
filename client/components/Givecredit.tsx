@@ -9,7 +9,7 @@ function Givecredit() {
               <p>
                 A tool to streamline and promote charitable giving in New
                 Zealand by combining a tax calculator with a tax credit
-                calculator.
+                calculator. Made In React using TypeScript and Semantic UI.
               </p>
               <h3 className="sm:text-2xl text-1xl py-6">Features</h3>
               <ul className="list-disc list-inside">
@@ -31,7 +31,7 @@ function Givecredit() {
                   target="_blank"
                 >
                   <span className="inline-block border border-gray-200 bg-gray-200 text-gray-700 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-300 focus:outline-none focus:shadow-outline">
-                    <input type="submit" value="View on GitHub"></input>
+                    <input type="submit" value="See on GitHub"></input>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="inline-block fill-current w-6 h-6 ml-2 mb-1"

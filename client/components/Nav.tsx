@@ -1,3 +1,5 @@
+import { Link, animateScroll as scroll } from 'react-scroll'
+
 function Nav() {
   return (
     <>
@@ -12,20 +14,47 @@ function Nav() {
             Portfolio of Ryan Kendrick
           </h1>
           <nav className="h-full md:ml-auto md:mr-0 font-medium text-lg flex flex-wrap items-center text-base justify-center mx-auto">
-            <a className="mx-4 cursor-pointer transition-all duration-100 hover:scale-110 hover:text-red-500">
-              Home
+            <Link
+              activeClass="active"
+              to="skills"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <div className="mx-4 cursor-pointer transition-all duration-100 hover:scale-110 hover:text-red-500">
+                Skills
+              </div>
+            </Link>
+            <Link
+              activeClass="active"
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <div className="mx-4 cursor-pointer transition-all duration-100 hover:scale-110 hover:text-red-500">
+                Projects
+              </div>
+            </Link>
+            <a
+              className="mx-4 cursor-pointer transition-all duration-100 hover:scale-110 hover:text-red-500"
+              href="images/ryanscv.pdf"
+            >
+              CV
             </a>
-            <a className="mx-4 cursor-pointer transition-all duration-100 hover:scale-110 hover:text-red-500">
-              Profile
+            <a
+              className="mx-4 cursor-pointer transition-all duration-100 hover:scale-110 hover:text-red-500"
+              href="https://www.linkedin.com/in/ryan-kendrick-275258272/"
+            >
+              LinkedIn
             </a>
-            <a className="mx-4 cursor-pointer transition-all duration-100 hover:scale-110 hover:text-red-500">
-              Skills
-            </a>
-            <a className="mx-4 cursor-pointer transition-all duration-100 hover:scale-110 hover:text-red-500">
-              Portfolio
-            </a>
-            <a className="mx-4 cursor-pointer transition-all duration-100 hover:scale-110 hover:text-red-500">
-              Contact
+            <a
+              className="mx-4 cursor-pointer transition-all duration-100 hover:scale-110 hover:text-red-500"
+              href="https://github.com/Ryan-Kendrick"
+            >
+              GitHub
             </a>
           </nav>
         </div>

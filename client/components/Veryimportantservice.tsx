@@ -18,7 +18,7 @@ function Veryimportantservice() {
               <p>
                 Getting data from users in a suitable format is important, but
                 nobody likes an unintuitive returning angry red text. An
-                experiment in form validation.
+                experiment in form validation made in React.
               </p>
               <h3 className="sm:text-2xl text-1xl py-6">Features</h3>
               <ul className="list-disc list-inside">
@@ -32,7 +32,7 @@ function Veryimportantservice() {
                   target="_blank"
                 >
                   <span className="inline-block border border-gray-200 bg-gray-200 text-gray-700 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-300 focus:outline-none focus:shadow-outline">
-                    <input type="submit" value="View on GitHub"></input>
+                    <input type="submit" value="See on GitHub"></input>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="inline-block fill-current w-6 h-6 ml-2 mb-1"

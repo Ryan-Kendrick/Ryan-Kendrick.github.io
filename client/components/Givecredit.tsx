@@ -6,11 +6,14 @@ function Givecredit() {
           <div className="flex px-5 py-12 lg:flex-row flex-col text-white justify-between shadow-amber-500 shadow-3xl ">
             <div className="basis-1/3 flex-initial lg:flex-shrink md:pb-10 flex flex-col mx-auto ">
               <h2 className=" text-5xl pb-12 text-center">Give Credit</h2>
-              <p>
-                A tool to streamline and promote charitable giving in New
-                Zealand by combining a tax calculator with a tax credit
-                calculator. Made In React using TypeScript and Semantic UI.
-              </p>
+              <blockquote className="p-4 my-4 border-l-4 border-gray-300 ">
+                <p className="text-xl italic font-medium leading-relaxed">
+                  A tool to streamline and promote charitable giving in New
+                  Zealand by combining a tax calculator with a tax credit
+                  calculator. Made In React using TypeScript and Semantic UI.
+                </p>
+              </blockquote>
+
               <h3 className="sm:text-2xl text-1xl py-6">Features</h3>
               <ul className="list-disc list-inside">
                 <li>
@@ -25,7 +28,13 @@ function Givecredit() {
                   repayment rates
                 </li>
               </ul>
-              <div className="pt-20 mx-auto">
+              <p className="mt-3 pt-3 border-t">
+                A passion project to explore Semantic UI while building
+                something around what I&apos;m pasionate about - Effective
+                Altruism. An early work in progress, lots of neat maths but the
+                UI needs work.
+              </p>
+              <div className="pt-12 mx-auto">
                 <form
                   action="https://github.com/Ryan-Kendrick/give-credit"
                   target="_blank"
@@ -43,7 +52,7 @@ function Givecredit() {
                 </form>
               </div>
             </div>
-            <div className="aspect-w-16 aspect-h-9 lg:aspect-none place-self-center">
+            <div className="place-self-center">
               <img
                 className="w-full h-full object-center object-cover m-auto"
                 src="images/givecredit2.png"

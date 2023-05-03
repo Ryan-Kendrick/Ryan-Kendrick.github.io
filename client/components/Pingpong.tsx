@@ -10,10 +10,14 @@ function Pingpong() {
           <div className="flex px-5 py-12 lg:flex-row flex-col text-white justify-between shadow-amber-500 shadow-3xl ">
             <div className="basis-1/3 flex-initial lg:flex-shrink md:pb-10 flex flex-col mx-auto ">
               <h2 className=" text-5xl pb-12 italic text-center">PINGPONG</h2>
-              <p>
-                A minimalistic social media app for spontaneous meetups.
-                Frontend application built in React Native for Android and iOS.
-              </p>
+              <blockquote className="p-4 my-4 border-l-4 border-gray-300 ">
+                <p className="text-xl italic font-medium leading-relaxed">
+                  A minimalistic social media app for spontaneous meetups.
+                  Frontend application built in React Native for Android and
+                  iOS.
+                </p>
+              </blockquote>
+
               <h3 className="sm:text-2xl text-1xl py-6">Features</h3>
               <ul className="list-disc list-inside">
                 <li>Friends list with pull to refresh functionality</li>
@@ -21,7 +25,13 @@ function Pingpong() {
                 <li>Google Places location data paired with an activity</li>
                 <li>Start Pinging when you want to meetup</li>
               </ul>
-              <div className="pt-20 mx-auto">
+              <p className="mt-3 pt-3 border-t">
+                A week-long project built to learn React Native, this project
+                had a lot to teach. Authentication on mobile was the greatest
+                challenge and with some more time I would like to deliver a more
+                reliable experience outside of the browser.
+              </p>
+              <div className="pt-12 mx-auto">
                 <form
                   action="https://github.com/Ryan-Kendrick/pingpong"
                   target="_blank"

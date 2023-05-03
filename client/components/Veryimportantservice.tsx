@@ -4,7 +4,7 @@ function Veryimportantservice() {
       <div className=" bg-sky-500 py-20 text-slate-100 text-lg font-medium font-sans">
         <div data-aos="fade-in">
           <div className="flex px-5 py-12 lg:flex-row flex-col text-white justify-between shadow-amber-500 shadow-3xl ">
-            <div className="aspect-w-16 aspect-h-9 lg:aspect-none place-self-center">
+            <div className="md:order-last place-self-center">
               <img
                 className="w-full h-full object-center object-cover m-auto"
                 src="images/vif3.jpg"
@@ -15,18 +15,28 @@ function Veryimportantservice() {
               <h2 className=" text-5xl pb-12 text-center">
                 Very Important Service
               </h2>
-              <p>
-                Getting data from users in a suitable format is important, but
-                nobody likes an unintuitive returning angry red text. An
-                experiment in form validation made in React.
-              </p>
+              <blockquote className="p-4 my-4 border-l-4 border-gray-300 ">
+                <p className="text-xl italic font-medium leading-relaxed">
+                  Getting data from users in a suitable format is important, but
+                  nobody likes an unintuitive returning angry red text. An
+                  experiment in form validation made in React.
+                </p>
+              </blockquote>
+
               <h3 className="sm:text-2xl text-1xl py-6">Features</h3>
               <ul className="list-disc list-inside">
                 <li>A very long terms of service you must read</li>
                 <li>An annoying form</li>
                 <li>An ambiguous CAPTCHA</li>
               </ul>
-              <div className="pt-20 mx-auto">
+              <p className="mt-3 pt-3 border-t">
+                An afternoon group project where I dabbled in input validation
+                and displaying errors. With more time I would have liked to do
+                more with validation requirements and occasionally messing with
+                user input.
+              </p>
+
+              <div className="pt-12 mx-auto">
                 <form
                   action="https://github.com/Ryan-Kendrick/very-important-service"
                   target="_blank"

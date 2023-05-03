@@ -74,9 +74,8 @@ function Profile() {
           <div className="flex pt-20 justify-center	items-center	">
             <a
               href="images/ryanscv.pdf"
-              className="rounded inline-flex group items-center justify-center px-3.5 py-2 m-1 cursor-pointer border-b-4 border-l-2 active:border-purple-600 active:shadow-none shadow-lg bg-gradient-to-tr from-purple-600 to-purple-500 border-purple-700 text-white"
+              className="rounded inline-flex group relative items-center justify-center px-3.5 py-2 m-1 cursor-pointer border-b-4 border-l-2 active:border-purple-600 active:shadow-none shadow-lg bg-gradient-to-tr from-purple-600 to-purple-500 border-purple-700 text-white"
             >
-              <span className="transition-all duration-300 ease-out bg-white rounded-full group-hover:w-32 group-hover:h-32 opacity-10"></span>
               <svg
                 className="fill-current w-4 h-4 mr-2"
                 xmlns="http://www.w3.org/2000/svg"

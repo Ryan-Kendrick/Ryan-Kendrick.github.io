@@ -4,7 +4,7 @@ function Veryimportantservice() {
       <div className=" bg-sky-500 py-20 text-slate-100 text-lg font-medium font-sans">
         <div data-aos="fade-in">
           <div className="flex px-5 py-12 lg:flex-row flex-col text-white justify-between shadow-amber-500 shadow-3xl ">
-            <div className="order-last lg:order-first place-self-center">
+            <div className="basis 2/3 order-last lg:order-first relative place-self-center">
               <img
                 className="w-full h-full object-center object-cover m-auto"
                 src="images/vif3.jpg"
@@ -12,9 +12,11 @@ function Veryimportantservice() {
               ></img>
             </div>
             <div className="basis-1/3 flex-initial lg:flex-shrink md:pb-10 flex flex-col mx-auto ">
-              <h2 className=" text-5xl pb-12 text-center">
-                Very Important Service
-              </h2>
+              <a href="https://github.com/Ryan-Kendrick/very-important-service">
+                <h2 className="hover:text-amber-500 hover:scale-110 duration-300 text-5xl pb-12 text-center">
+                  Very Important Service
+                </h2>
+              </a>
               <blockquote className="p-4 my-4 border-l-4 border-gray-300 ">
                 <p className="text-xl italic font-medium leading-relaxed">
                   Getting data from users in a suitable format is important, but

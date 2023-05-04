@@ -9,7 +9,11 @@ function Pingpong() {
         <div data-aos="fade-in">
           <div className="flex px-5 py-12 lg:flex-row flex-col text-white justify-between shadow-amber-500 shadow-3xl ">
             <div className="basis-1/3 flex-initial lg:flex-shrink md:pb-10 flex flex-col mx-auto ">
-              <h2 className=" text-5xl pb-12 italic text-center">PINGPONG</h2>
+              <a href="https://github.com/Ryan-Kendrick/pingpong">
+                <h2 className="hover:text-sky-500 hover:scale-110 duration-300 text-5xl pb-12 italic text-center">
+                  PINGPONG
+                </h2>
+              </a>
               <blockquote className="p-4 my-4 border-l-4 border-gray-300 ">
                 <p className="text-xl italic font-medium leading-relaxed">
                   A minimalistic social media app for spontaneous meetups.

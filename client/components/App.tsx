@@ -1,8 +1,9 @@
+import 'aos/dist/aos.css'
+import 'flowbite'
 import Nav from './Nav'
 import Profile from './Profile'
 import Skills from './Skills'
 import AOS from 'aos'
-import 'aos/dist/aos.css'
 import Projects from './Projects'
 
 function App() {

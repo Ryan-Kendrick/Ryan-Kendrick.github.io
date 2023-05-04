@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./client/components/*.tsx', './public/index.html'],
+  content: [
+    './client/components/*.tsx',
+    './public/index.html',
+    './node_modules/flowbite/**/*.js',
+  ],
   theme: {
     aspectRatio: {
       auto: 'auto',
@@ -38,5 +42,5 @@ module.exports = {
   corePlugins: {
     aspectRatio: false,
   },
-  plugins: [require('@tailwindcss/aspect-ratio')],
+  plugins: [require('@tailwindcss/aspect-ratio'), require('flowbite/plugin')],
 }

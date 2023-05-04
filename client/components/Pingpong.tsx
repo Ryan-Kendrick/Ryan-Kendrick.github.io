@@ -8,7 +8,7 @@ function Pingpong() {
         </h2>
         <div data-aos="fade-in">
           <div className="flex px-5 py-12 lg:flex-row flex-col text-white justify-between shadow-amber-500 shadow-3xl ">
-            <div className="basis-1/3 flex-initial lg:flex-shrink md:pb-10 flex flex-col mx-auto ">
+            <div className="basis-1/3 flex-initial lg:flex-shrink md:pb-10 flex flex-col mx-auto min-w-[33.3333vw] ">
               <a href="https://github.com/Ryan-Kendrick/pingpong">
                 <h2 className="hover:text-sky-500 hover:scale-110 duration-300 text-5xl pb-12 italic text-center">
                   PINGPONG
@@ -53,15 +53,12 @@ function Pingpong() {
                 </form>
               </div>
             </div>
-            <video
-              className="w-640px h-360px md:w-720px md:h-480px m-auto"
-              width="720"
-              height="480"
-              controls
-            >
-              <source src="video/pingpong.mp4" type="video/mp4"></source>
-              Your browser does not support mp4 video
-            </video>
+            <div className="basis 2/3 relative place-self-center lg:ml-10">
+              <video className="" width="1920" height="1080" controls>
+                <source src="video/pingpong.mp4" type="video/mp4"></source>
+                Your browser does not support mp4 video
+              </video>
+            </div>
           </div>
         </div>
       </div>

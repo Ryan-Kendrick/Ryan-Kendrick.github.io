@@ -4,7 +4,7 @@ function Givecredit() {
       <div className="bg-slate-700 py-20 text-slate-100 text-lg font-medium font-sans">
         <div data-aos="fade-in">
           <div className="flex px-5 py-12 lg:flex-row flex-col text-white justify-between shadow-amber-500 shadow-3xl ">
-            <div className="basis-1/3 flex-initial lg:flex-shrink md:pb-10 flex flex-col mx-auto ">
+            <div className="basis-1/3 flex-initial lg:flex-shrink md:pb-10 flex flex-col mx-auto min-w-[33.33333vw]">
               <a href="https://github.com/Ryan-Kendrick/give-credit">
                 <h2 className="hover:text-amber-500 hover:scale-110 duration-300 text-5xl pb-12 text-center">
                   Give Credit
@@ -56,7 +56,7 @@ function Givecredit() {
                 </form>
               </div>
             </div>
-            <div className="basis 2/3 relative place-self-center">
+            <div className="basis 2/3 relative place-self-center lg:ml-10">
               <img
                 className="w-full h-full object-center object-cover m-auto"
                 src="images/givecredit2.png"

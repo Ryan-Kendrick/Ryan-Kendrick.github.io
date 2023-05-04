@@ -2,7 +2,7 @@ function Profile() {
   return (
     <>
       <div className="flex min-h-[40vh] px-5 py-12 md:flex-row flex-col items-center text-white bg-zinc-600 justify-between">
-        <div className="basis-2/3 min-h-[40vh] md:border-r-4 px-2 border-amber-500 text-base  lg:flex-grow md:w-1/2  self-center">
+        <div className="basis-2/3 min-h-[40vh] md:border-r-4 px-2 border-gray-300 text-base  lg:flex-grow md:w-1/2  self-center">
           <h2 className="text-5xl py-12 md:pt-0 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-pink-500 font-light text-center">
             About Me
           </h2>

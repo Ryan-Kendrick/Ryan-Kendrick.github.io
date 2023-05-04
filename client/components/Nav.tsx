@@ -5,11 +5,16 @@ function Nav() {
     <>
       <header className="relative h-28 text-neutral-50 bg-gradient-to-r from-sky-500 to-indigo-500 ">
         <div className="h-full w-11/12 md:w-10/12 mx-auto flex flex-wrap py-8 md:flex-row items-center">
-          <img
+          <a
             className="absolute w-20 h-20 text-white rounded-full ring-2 ring-white hidden md:block"
-            src="images/ryan.png"
-            alt="Ryan"
-          ></img>
+            href="images/ryan.png"
+          >
+            <img
+              className="rounded-full"
+              src="images/ryan.png"
+              alt="Ryan"
+            ></img>
+          </a>
           <h1 className="text-2xl sm:text-3xl md:pl-20 mx-auto md:ml-2 font-bold">
             Portfolio of Ryan Kendrick
           </h1>

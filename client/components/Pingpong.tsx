@@ -6,8 +6,8 @@ function Pingpong() {
         <h2 className=" text-5xl pb-10 pb-12 text-white text-center font-bold">
           Projects
         </h2>
-        <div data-aos="fade-in">
-          <div className="flex px-5 py-12 lg:flex-row flex-col text-white justify-between shadow-amber-500 shadow-3xl ">
+        <div className="flex px-5 py-12 lg:flex-row flex-col text-white justify-between shadow-amber-500 shadow-3xl ">
+          <div data-aos="fade-right">
             <div className="basis-1/3 flex-initial lg:flex-shrink md:pb-10 flex flex-col mx-auto min-w-[33.3333vw] ">
               <a href="https://github.com/Ryan-Kendrick/pingpong">
                 <h2 className="hover:text-sky-500 hover:scale-110 duration-300 text-5xl pb-12 italic text-center">
@@ -68,6 +68,8 @@ function Pingpong() {
                 </form>
               </div>
             </div>
+          </div>
+          <div data-aos="fade-left">
             <div className="basis 2/3 relative place-self-center lg:ml-10">
               <video className="" width="1920" height="1080" controls>
                 <source src="video/pingpong.mp4" type="video/mp4"></source>

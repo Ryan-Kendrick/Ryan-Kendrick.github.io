@@ -1,17 +1,25 @@
-function Profile() {
+interface Props {
+  setProfilePos: (e: React.UIEvent<HTMLElement>) => void
+}
+
+function Profile({ setProfilePos }: Props) {
   return (
     <>
-      <div className="flex min-h-[40vh] px-5 py-12 md:flex-row flex-col items-start text-white bg-slate-900 justify-between">
-        <div className="basis-2/3 min-h-[40vh] md:border-r-4 px-2 border-gray-300 text-base lg:flex-grow md:w-1/2 ">
+      <section
+        id="profile"
+        className="flex min-h-[40vh] px-5 py-12 md:flex-row flex-col items-start text-white bg-slate-900 justify-between"
+        onScroll={setProfilePos}
+      >
+        <div className="basis-2/3 min-h-[40vh] md:border-r-4 px-2 border-gray-300 text-base lg:flex-grow md:w-1/2">
           <h2 className="text-5xl py-12 md:pt-0 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-pink-500 font-light text-center">
             About Me
           </h2>
+          <p className="text-2xl pb-2 text-slate-200 font-medium font-sans">
+            I&apos;m Ryan and I&apos;m a web developer with a background in
+            technical support and the social sciences.
+          </p>
+          <br></br>
           <p className="text-slate-200 text-lg font-medium font-sans">
-            <p className="text-2xl pb-2">
-              I&apos;m Ryan and I&apos;m a web developer with a background in
-              technical support and the social sciences.
-            </p>
-            <br></br>
             In the past few years I have been getting back to my technical
             roots, exploring what a more technical career path might look like.
             It was when I began helping out with the websites of a think-tank at
@@ -89,7 +97,7 @@ function Profile() {
             </a>
           </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }

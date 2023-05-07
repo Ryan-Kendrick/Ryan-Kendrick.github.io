@@ -5,8 +5,23 @@ import Profile from './Profile'
 import Skills from './Skills'
 import AOS from 'aos'
 import Projects from './Projects'
+import { useEffect, useState } from 'react'
 
 function App() {
+  const [scrollTop, setScrollTop] = useState(0)
+
+  useEffect(() => {
+    const handleScroll = (event) => {
+      setScrollTop(window.scrollY)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   AOS.init({
     // Global settings:
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -31,7 +46,6 @@ function App() {
   return (
     <>
       <Nav />
-      <Profile />
       <Skills />
       <Projects />
     </>

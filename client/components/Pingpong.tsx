@@ -2,7 +2,7 @@
 function Pingpong() {
   return (
     <>
-      <div className=" bg-orange-500 py-20 text-slate-100 text-lg font-medium font-sans">
+      <section className="bg-orange-500 py-20 text-slate-100 text-lg font-medium font-sans">
         <h2 className=" text-5xl pb-10 pb-12 text-white text-center font-bold">
           Projects
         </h2>
@@ -87,7 +87,7 @@ function Pingpong() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }

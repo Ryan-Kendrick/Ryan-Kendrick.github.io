@@ -43,8 +43,12 @@ function Givecredit() {
                   action="https://github.com/Ryan-Kendrick/give-credit"
                   target="_blank"
                 >
-                  <span className="inline-block border border-gray-200 bg-gray-200 text-gray-700 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-300 focus:outline-none focus:shadow-outline">
-                    <input type="submit" value="See on GitHub"></input>
+                  <span className="cursor-pointer inline-block border border-gray-200 bg-gray-200 text-gray-700 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-300 focus:shadow-outline">
+                    <input
+                      className="cursor-pointer"
+                      type="submit"
+                      value="See on GitHub"
+                    ></input>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="inline-block fill-current w-6 h-6 ml-2 mb-1"

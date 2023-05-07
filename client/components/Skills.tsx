@@ -2,7 +2,7 @@ function Skills() {
   return (
     <>
       <div className="w-full bg-skills bg-cover bg-center">
-        <div id="skills" className="py-20 backdrop-blur-lg">
+        <div id="skills" className="py-20 backdrop-blur-md">
           <h2 className=" text-5xl pb-10 pb-12 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-pink-500 font-light text-center">
             Talents Include:
           </h2>

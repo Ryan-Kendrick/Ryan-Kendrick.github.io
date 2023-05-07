@@ -1,14 +1,9 @@
-interface Props {
-  setProfilePos: (e: React.UIEvent<HTMLElement>) => void
-}
-
-function Profile({ setProfilePos }: Props) {
+function Profile() {
   return (
     <>
       <section
         id="profile"
         className="flex min-h-[40vh] px-5 py-12 md:flex-row flex-col items-start text-white bg-slate-900 justify-between"
-        onScroll={setProfilePos}
       >
         <div className="basis-2/3 min-h-[40vh] md:border-r-4 px-2 border-gray-300 text-base lg:flex-grow md:w-1/2">
           <h2 className="text-5xl py-12 md:pt-0 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-pink-500 font-light text-center">

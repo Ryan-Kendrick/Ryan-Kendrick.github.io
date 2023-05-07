@@ -2,36 +2,23 @@ import { Link } from 'react-scroll'
 import Profile from './Profile'
 import React, { useState } from 'react'
 
-function Nav() {
-  const [navPos, setNavPos] = useState(0)
-  const [profilePos, setProfilePos] = useState(0)
-  const [makeSticky, setMakeSticky] = useState(false)
+interface Props {
+  useSticky: boolean
+}
 
-  function checkNavPos(e: React.UIEvent<HTMLElement>) {
-    const height = e.currentTarget.scrollTop
-    setNavPos(height)
-    console.log(navPos)
-  }
-
-  function checkProfilePos(e: React.UIEvent<HTMLElement>) {
-    const height = e.currentTarget.scrollTop
-    setProfilePos(height)
-    console.log(profilePos)
-  }
-
+function Nav({ useSticky }: Props) {
   return (
     <>
       <header
-        id="header"
-        className={
-          'relative h-28 text-neutral-50 bg-gradient-to-r from-sky-500 to-indigo-500 shadow-3xl' +
-          (makeSticky && 'sticky top-0 transition-all duration-500')
-        }
+        id="sticky"
+        className="relative h-28 text-neutral-50 bg-gradient-to-r from-sky-500 to-indigo-500 shadow-3xl top-0"
+        style={{ top: useSticky ? '0' : 'initial',
+        CSSTransition-property: 'all',
+        transition-timing-function: 'cubic-bezier(0.4, 0, 0.2, 1)',
+        transition-duration: '150ms' }}
       >
-        <div
-          onScroll={checkNavPos}
-          className="h-full w-11/12 md:w-10/12 mx-auto flex flex-wrap py-8 md:flex-row items-center"
-        >
+        top-0 transition-all duration-500 z-50 sticky
+        <div className="h-full w-11/12 md:w-10/12 mx-auto flex flex-wrap py-8 md:flex-row items-center">
           <a
             className="absolute w-20 h-20 text-white rounded-full ring-2 ring-white hidden md:block"
             href="images/ryan.png"
@@ -91,7 +78,7 @@ function Nav() {
           </nav>
         </div>
       </header>
-      <Profile setProfilePos={checkProfilePos} />
+      <Profile />
     </>
   )
 }

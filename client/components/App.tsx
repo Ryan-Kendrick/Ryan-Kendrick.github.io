@@ -5,13 +5,14 @@ import Profile from './Profile'
 import Skills from './Skills'
 import AOS from 'aos'
 import Projects from './Projects'
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function App() {
   const [scrollTop, setScrollTop] = useState(0)
+  const [useSticky, setUseSticky] = useState(false)
 
   useEffect(() => {
-    const handleScroll = (event) => {
+    const handleScroll = (evt: Event) => {
       setScrollTop(window.scrollY)
     }
 
@@ -45,7 +46,7 @@ function App() {
 
   return (
     <>
-      <Nav />
+      <Nav sticky={useSticky} />
       <Skills />
       <Projects />
     </>

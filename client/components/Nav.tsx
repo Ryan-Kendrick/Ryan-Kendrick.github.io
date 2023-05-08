@@ -1,6 +1,7 @@
 import { Link } from 'react-scroll'
 import Profile from './Profile'
 import { useEffect } from 'react'
+import { useSubmit } from 'react-router-dom'
 
 interface Props {
   useSticky: boolean
@@ -12,17 +13,17 @@ function Nav({ useSticky }: Props) {
 
     useSticky && header?.classList.add('sticky')
     useSticky && header?.classList.add('top-0')
+    useSticky && header?.classList.add('shadow-3xl')
+    useSticky || header?.classList.remove('sticky')
+    useSticky || header?.classList.remove('top-0')
+    useSticky || header?.classList.remove('shadow-3xl')
   }, [useSticky])
 
   return (
     <>
       <header
         id="sticky"
-        className="relative h-28 py-8 text-neutral-50 bg-gradient-to-r from-sky-500 to-indigo-500 shadow-3xl z-50 transition-all duration-500"
-        // style={{
-        //   top: useSticky ? '0' : 'initial',
-        //   position: useSticky ? 'sticky' : 'relative',
-        // }}
+        className="relative h-28 py-8 text-neutral-50 bg-gradient-to-r from-sky-500 to-indigo-500 z-50 transition-all duration-500"
       >
         <div className="h-full w-11/12 md:w-10/12 mx-auto flex flex-wrap  md:flex-row items-center">
           <a

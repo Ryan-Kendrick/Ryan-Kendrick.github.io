@@ -23,6 +23,9 @@ function App() {
     }
   }, [])
 
+  useEffect(() => {
+    scrollTop > 500 ? setUseSticky(true) : setUseSticky(false)
+  }, [scrollTop])
   AOS.init({
     // Global settings:
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -46,7 +49,7 @@ function App() {
 
   return (
     <>
-      <Nav sticky={useSticky} />
+      <Nav useSticky={useSticky} />
       <Skills />
       <Projects />
     </>

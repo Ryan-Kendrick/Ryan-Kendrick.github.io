@@ -1,6 +1,6 @@
 import { Link } from 'react-scroll'
 import Profile from './Profile'
-import React, { useState } from 'react'
+import { useEffect } from 'react'
 
 interface Props {
   useSticky: boolean
@@ -11,13 +11,12 @@ function Nav({ useSticky }: Props) {
     <>
       <header
         id="sticky"
-        className="relative h-28 text-neutral-50 bg-gradient-to-r from-sky-500 to-indigo-500 shadow-3xl top-0"
-        style={{ top: useSticky ? '0' : 'initial',
-        CSSTransition-property: 'all',
-        transition-timing-function: 'cubic-bezier(0.4, 0, 0.2, 1)',
-        transition-duration: '150ms' }}
+        className="relative h-28 text-neutral-50 bg-gradient-to-r from-sky-500 to-indigo-500 shadow-3xl z-50 transition-all duration-500"
+        style={{
+          top: useSticky ? '0' : 'initial',
+          position: useSticky ? 'sticky' : 'relative',
+        }}
       >
-        top-0 transition-all duration-500 z-50 sticky
         <div className="h-full w-11/12 md:w-10/12 mx-auto flex flex-wrap py-8 md:flex-row items-center">
           <a
             className="absolute w-20 h-20 text-white rounded-full ring-2 ring-white hidden md:block"

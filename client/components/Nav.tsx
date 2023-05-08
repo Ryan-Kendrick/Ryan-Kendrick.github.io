@@ -7,17 +7,24 @@ interface Props {
 }
 
 function Nav({ useSticky }: Props) {
+  useEffect(() => {
+    const header = document.getElementById('sticky')
+
+    useSticky && header?.classList.add('sticky')
+    useSticky && header?.classList.add('top-0')
+  }, [useSticky])
+
   return (
     <>
       <header
         id="sticky"
-        className="relative h-28 text-neutral-50 bg-gradient-to-r from-sky-500 to-indigo-500 shadow-3xl z-50 transition-all duration-500"
-        style={{
-          top: useSticky ? '0' : 'initial',
-          position: useSticky ? 'sticky' : 'relative',
-        }}
+        className="relative h-28 py-8 text-neutral-50 bg-gradient-to-r from-sky-500 to-indigo-500 shadow-3xl z-50 transition-all duration-500"
+        // style={{
+        //   top: useSticky ? '0' : 'initial',
+        //   position: useSticky ? 'sticky' : 'relative',
+        // }}
       >
-        <div className="h-full w-11/12 md:w-10/12 mx-auto flex flex-wrap py-8 md:flex-row items-center">
+        <div className="h-full w-11/12 md:w-10/12 mx-auto flex flex-wrap  md:flex-row items-center">
           <a
             className="absolute w-20 h-20 text-white rounded-full ring-2 ring-white hidden md:block"
             href="images/ryan.png"

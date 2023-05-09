@@ -1,4 +1,27 @@
-function Profile() {
+import { Dispatch, SetStateAction, useEffect } from 'react'
+
+interface Props {
+  setNavPos: Dispatch<SetStateAction<number>>
+}
+
+function Profile({ setNavPos }: Props) {
+  useEffect(() => {
+    const handleScroll = (evt: Event) => {
+      const profile = document.getElementById('profile')
+
+      const profileHeight = profile?.clientHeight
+      profileHeight && setNavPos(profileHeight)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [setNavPos])
+
+  useEffect(() => {})
+
   return (
     <>
       <section

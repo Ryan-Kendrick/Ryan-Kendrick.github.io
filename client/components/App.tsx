@@ -4,27 +4,8 @@ import Nav from './Nav'
 import Skills from './Skills'
 import AOS from 'aos'
 import Projects from './Projects'
-import { useEffect, useState } from 'react'
 
 function App() {
-  const [windowPos, setWindowPos] = useState(0)
-  const [useSticky, setUseSticky] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = (evt: Event) => {
-      setWindowPos(window.scrollY)
-    }
-
-    window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
-
-  useEffect(() => {
-    windowPos > 500 ? setUseSticky(true) : setUseSticky(false)
-  }, [windowPos])
   AOS.init({
     // Global settings:
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -48,7 +29,7 @@ function App() {
 
   return (
     <>
-      <Nav useSticky={useSticky} />
+      <Nav />
       <Skills />
       <Projects />
     </>

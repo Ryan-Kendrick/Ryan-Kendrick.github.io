@@ -16,3 +16,7 @@ body {
   background: url('ryan-presenting.jpg') center center no-repeat;
   background-attachment: fixed;
 }
+
+#profile {
+  animation: scale 5s infinite ease-in-out;
+}

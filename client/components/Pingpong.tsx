@@ -2,7 +2,7 @@
 function Pingpong() {
   return (
     <>
-      <div className=" bg-orange-500 py-20 text-slate-100 text-lg font-medium font-sans">
+      <section className="bg-orange-500 py-20 text-slate-100 text-lg font-medium font-sans">
         <h2 className=" text-5xl pb-10 pb-12 text-white text-center font-bold">
           Projects
         </h2>
@@ -40,8 +40,12 @@ function Pingpong() {
                   action="https://github.com/Ryan-Kendrick/pingpong"
                   target="_blank"
                 >
-                  <span className="inline-block border border-gray-200 bg-gray-200 text-gray-700 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-300 focus:outline-none focus:shadow-outline">
-                    <input type="submit" value="Frontend on GitHub"></input>
+                  <span className="cursor-pointer inline-block border border-gray-200 bg-gray-200 text-gray-700 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-300 focus:shadow-outline">
+                    <input
+                      className="cursor-pointer"
+                      type="submit"
+                      value="Frontend on GitHub"
+                    ></input>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="inline-block fill-current w-6 h-6 ml-2 mb-1"
@@ -54,9 +58,14 @@ function Pingpong() {
                 <form
                   action="https://github.com/Ryan-Kendrick/pingpong-backend"
                   target="_blank"
+                  className=""
                 >
-                  <span className="inline-block border border-gray-200 bg-gray-200 text-gray-700 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-300 focus:outline-none focus:shadow-outline">
-                    <input type="submit" value="Backend on GitHub"></input>
+                  <span className="cursor-pointer inline-block border border-gray-200 bg-gray-200 text-gray-700 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-300 focus:shadow-outline">
+                    <input
+                      className="cursor-pointer"
+                      type="submit"
+                      value="Backend on GitHub"
+                    ></input>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="inline-block fill-current w-6 h-6 ml-2 mb-1"
@@ -78,7 +87,7 @@ function Pingpong() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }

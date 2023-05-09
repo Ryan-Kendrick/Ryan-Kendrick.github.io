@@ -95,6 +95,7 @@
     "express": "^4.17.2",
     "flowbite": "^1.6.5",
     "postcss-loader": "^7.3.0",
+    "react-animate-height": "^3.1.1",
     "react-scroll": "^1.8.9",
     "style-loader": "^3.3.2",
     "ts-node": "^10.9.1"

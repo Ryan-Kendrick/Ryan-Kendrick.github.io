@@ -21,7 +21,7 @@ function Nav() {
   }, [])
 
   useEffect(() => {
-    windowPos && navPos && windowPos > navPos - 130
+    windowPos && navPos && windowPos > navPos
       ? setUseSticky(true)
       : setUseSticky(false)
   }, [windowPos, navPos])
@@ -36,7 +36,13 @@ function Nav() {
 
   return (
     <>
-      {useSticky ? (
+      <header
+        id="static"
+        className="relative h-28 py-8 text-neutral-50 bg-gradient-to-r from-sky-500 to-indigo-500 z-50"
+      >
+        <Navcontent />
+      </header>
+      {useSticky && (
         <>
           <AnimateHeight
             duration={500}
@@ -47,15 +53,6 @@ function Nav() {
               <Navcontent />
             </header>
           </AnimateHeight>
-        </>
-      ) : (
-        <>
-          <header
-            id="static"
-            className="relative h-28 py-8 text-neutral-50 bg-gradient-to-r from-sky-500 to-indigo-500 z-50"
-          >
-            <Navcontent />
-          </header>
         </>
       )}
       <Profile setNavPos={setNavPos} />

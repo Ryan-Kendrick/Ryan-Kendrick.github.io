@@ -7,12 +7,12 @@ function Veryimportantservice() {
             id="default-carousel"
             data-aos="fade-right"
             className="basis 2/3 order-last lg:order-first relative place-self-center w-full lg:mr-10"
-            data-carousel="static"
+            data-carousel="slide"
           >
             <div className="relative h-56 overflow-hidden rounded-lg md:h-96 aspect-w-16 aspect-h-9">
               <div
                 className="hidden duration-700 ease-in-out"
-                data-carousel-item
+                data-carousel-item="active"
               >
                 <a href="images/vif1.jpg">
                   <img
@@ -39,7 +39,6 @@ function Veryimportantservice() {
                 data-carousel-item
               >
                 <a href="images/vif3.jpg">
-                  {' '}
                   <img
                     src="images/vif3.jpg"
                     className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"

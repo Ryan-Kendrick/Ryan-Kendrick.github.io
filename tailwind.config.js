@@ -4,6 +4,7 @@ module.exports = {
     './client/components/*.tsx',
     './public/index.html',
     './node_modules/flowbite/**/*.js',
+    './node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
     aspectRatio: {

@@ -4,6 +4,7 @@ import Nav from './Nav'
 import Skills from './Skills'
 import AOS from 'aos'
 import Projects from './Projects'
+import { Carousel } from 'flowbite-react'
 
 function App() {
   AOS.init({

@@ -78,13 +78,14 @@ function Pingpong() {
               </div>
             </div>
           </div>
-          <div data-aos="fade-left">
-            <div className="basis 2/3 relative place-self-center lg:ml-10">
-              <video className="" width="1920" height="1080" controls>
-                <source src="video/pingpong.mp4" type="video/mp4"></source>
-                Your browser does not support mp4 video
-              </video>
-            </div>
+          <div
+            data-aos="fade-left"
+            className="basis 2/3 relative place-self-center lg:ml-10 pt-10 md:pt-0"
+          >
+            <video className="" width="1920" height="1080" controls>
+              <source src="video/pingpong.mp4" type="video/mp4"></source>
+              Your browser does not support mp4 video
+            </video>
           </div>
         </div>
       </section>

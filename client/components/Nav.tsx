@@ -4,8 +4,8 @@ import AnimateHeight from 'react-animate-height'
 import Navcontent from './Navcontent'
 
 function Nav() {
-  const [windowPos, setWindowPos] = useState(0)
-  const [navPos, setNavPos] = useState(0)
+  const [windowPos, setWindowPos] = useState(undefined as number | undefined)
+  const [navPos, setNavPos] = useState(undefined as number | undefined)
   const [useSticky, setUseSticky] = useState(false)
 
   useEffect(() => {
@@ -21,7 +21,9 @@ function Nav() {
   }, [])
 
   useEffect(() => {
-    windowPos > navPos - 130 ? setUseSticky(true) : setUseSticky(false)
+    windowPos && navPos && windowPos > navPos - 130
+      ? setUseSticky(true)
+      : setUseSticky(false)
   }, [windowPos, navPos])
 
   const [height, setHeight] = useState(null as string | null | number)

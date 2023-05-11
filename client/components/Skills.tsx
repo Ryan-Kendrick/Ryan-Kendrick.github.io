@@ -5,7 +5,7 @@ function Skills() {
         <div id="skills" className="py-20 backdrop-blur-md">
           <div className="flex px-5 py-12 lg:flex-row flex-col text-white justify-between">
             <div className="basis-3/4">
-              <h2 className="text-5xl pb-10 pb-12 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-pink-500 font-light text-center">
+              <h2 className="text-5xl pb-10 pb-12 text-white font-light text-center">
                 Talents Include:
               </h2>
               <div className="grid grid-cols-2 md:grid-cols-3 md:w-2/3 mx-auto gap-8">
@@ -90,7 +90,7 @@ function Skills() {
               </div>
             </div>
             <div className="basis-1/4 h-full">
-              <h2 className="text-5xl pb-10 py-12 lg:pt-0 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-pink-500 font-light text-center">
+              <h2 className="text-5xl pb-10 py-12 lg:pt-0 text-white font-light text-center">
                 Up Next:
               </h2>
               <div className="grid grid-cols-1 pt-16 md:w-2/3 mx-auto gap-8 place-items-center ">

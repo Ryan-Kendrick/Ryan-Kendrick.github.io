@@ -9,9 +9,21 @@ function Navcontent() {
       >
         <img className="rounded-full" src="images/ryan.png" alt="Ryan"></img>
       </a>
-      <h1 className="text-2xl sm:text-3xl md:pl-20 mx-auto md:ml-2 font-bold">
-        Portfolio of Ryan Kendrick
-      </h1>
+      <Link
+        activeClass="active"
+        to="static-header"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+      >
+        <h1
+          id="top"
+          className="text-2xl sm:text-3xl md:pl-20 mx-auto md:ml-2 font-bold cursor-pointer"
+        >
+          Portfolio of Ryan Kendrick
+        </h1>
+      </Link>
       <nav className="h-full md:ml-auto md:mr-0 font-medium text-lg flex flex-wrap items-center text-base justify-center mx-auto">
         <Link
           activeClass="active"

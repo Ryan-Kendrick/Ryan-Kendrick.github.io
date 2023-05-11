@@ -37,7 +37,7 @@ function Nav() {
   return (
     <>
       <header
-        id="static"
+        id="static-header"
         className="relative h-28 py-8 text-neutral-50 bg-gradient-to-r from-sky-500 to-indigo-500 z-50"
       >
         <Navcontent />

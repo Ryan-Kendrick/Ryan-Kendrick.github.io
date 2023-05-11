@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction, useEffect } from 'react'
 
 interface Props {
-  setNavPos: Dispatch<SetStateAction<number>>
+  setNavPos: Dispatch<SetStateAction<number | undefined>>
 }
 
 function Profile({ setNavPos }: Props) {

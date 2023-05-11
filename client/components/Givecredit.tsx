@@ -61,14 +61,14 @@ function Givecredit() {
               </div>
             </div>
           </div>
-          <div data-aos="fade-left">
-            <div className="basis 2/3 relative place-self-center lg:ml-10">
+          <div data-aos="fade-left" className="flex">
+            <div className="basis 2/3 relative place-self-center lg:ml-10 pt-10 md:pt-0">
               <img
                 className="w-full h-full object-center object-cover m-auto"
                 src="images/givecredit2.png"
                 alt="give credit"
               ></img>
-              <div className="absolute rounded w-3/4 left-0 right-0 mx-auto top-5 py-2 bg-gray-900 shadow-3xl opacity-75">
+              <div className="absolute rounded w-3/4 left-0 right-0 mx-auto top-12 md:top-5 py-2 bg-gray-900 shadow-3xl opacity-75">
                 <svg
                   className="mx-auto my-2 w-10 h-10 text-gray-400"
                   xmlns="http://www.w3.org/2000/svg"

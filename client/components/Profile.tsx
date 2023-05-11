@@ -58,7 +58,7 @@ function Profile({ setNavPos }: Props) {
           <ul className="py-12 list-none text-white text-lg pl-2">
             <li className="flex items-center">
               <img
-                className="basis 1/10 inline-block w-4 h-4 rounded-full ring-1 ring-white"
+                className="basis 1/10 inline-block w-4 h-4 rounded-full ring-offset-2 ring"
                 src="images/linkedin.png"
                 alt="linkedin icon"
               ></img>
@@ -71,7 +71,7 @@ function Profile({ setNavPos }: Props) {
             </li>
             <li className="flex items-center">
               <img
-                className="inline-block w-4 h-4 rounded-full ring-1 ring-white"
+                className="inline-block w-4 h-4 rounded-full ring-offset-2 ring"
                 src="images/github.png"
                 alt="github icon"
               ></img>
@@ -84,7 +84,7 @@ function Profile({ setNavPos }: Props) {
             </li>
             <li className="flex items-center">
               <img
-                className="inline-block w-4 h-4 rounded-full ring-1 ring-white"
+                className="inline-block w-4 h-4 rounded-full ring-offset-2 ring"
                 src="images/location.png"
                 alt="location icon"
               ></img>
@@ -92,7 +92,7 @@ function Profile({ setNavPos }: Props) {
             </li>
             <li className="flex items-center">
               <img
-                className="inline-block w-4 h-4 rounded-full ring-1 ring-white"
+                className="inline-block w-4 h-4 rounded-full ring-offset-2 ring"
                 src="images/flag.png"
                 alt="nz flag icon"
               ></img>

@@ -7,7 +7,7 @@ function Veryimportantservice() {
         <div className="flex px-5 py-12 lg:flex-row flex-col text-white justify-between shadow-amber-500 shadow-3xl">
           <div
             data-aos="fade-right"
-            className="basis 2/3 h-56 md:h-96 order-last lg:order-first relative place-self-center w-full lg:mr-10 overflow-hidden pt-10 md:pt-0 "
+            className="basis 2/3 h-56 md:h-96 order-last lg:order-first relative place-self-center w-full lg:mr-10 overflow-hidden pt-10 md:pt-0 min-h-[58.5vw] md:min-h-[53.075vw] min-w-[55vw] lg:min-h-[31.075vw]"
           >
             <Carousel id="default-carousel" className="">
               <a href="images/vif1.jpg">

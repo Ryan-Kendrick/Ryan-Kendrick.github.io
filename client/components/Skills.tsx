@@ -8,7 +8,7 @@ function Skills() {
               <h2 className="text-5xl pb-10 pb-12 text-white font-light text-center">
                 Talents Include:
               </h2>
-              <div className="grid grid-cols-2 md:grid-cols-3 md:w-2/3 mx-auto gap-8">
+              <div className="grid grid-cols-2 md:grid-cols-4 md:w-2/3 mx-auto gap-8">
                 <div data-aos="fade-in">
                   <div className="group relative hover:-translate-y-1 hover:scale-110 duration-300">
                     <img
@@ -87,6 +87,32 @@ function Skills() {
                     </div>
                   </div>
                 </div>
+                <div data-aos="fade-in">
+                  <div className="group relative hover:-translate-y-1 hover:scale-110 duration-300">
+                    <img
+                      className="rounded w-36 h-36 shadow-xl mx-auto bg-slate-100 border-double border-4 border-gray-800"
+                      src="images/python.png"
+                      alt="python"
+                    ></img>
+                    <div className="absolute bottom-full left-1/2 z-20 mb-3 -translate-x-1/2 whitespace-nowrap rounded bg-black py-[6px] px-4 text-sm font-semibold text-white transition-opacity duration-150 ease-in opacity-0 group-hover:opacity-100">
+                      <span className="absolute bottom-[-3px] left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm bg-black"></span>
+                      Python
+                    </div>
+                  </div>
+                </div>
+                <div data-aos="fade-in">
+                  <div className="group relative hover:-translate-y-1 hover:scale-110 duration-300">
+                    <img
+                      className="rounded w-36 h-36 shadow-xl mx-auto bg-slate-100 border-double border-4 border-gray-800"
+                      src="images/pandas.png"
+                      alt="pandas"
+                    ></img>
+                    <div className="absolute bottom-full left-1/2 z-20 mb-3 -translate-x-1/2 whitespace-nowrap rounded bg-black py-[6px] px-4 text-sm font-semibold text-white transition-opacity duration-150 ease-in opacity-0 group-hover:opacity-100">
+                      <span className="absolute bottom-[-3px] left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm bg-black"></span>
+                      Pandas
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="basis-1/4 h-full">
@@ -98,12 +124,12 @@ function Skills() {
                   <div className="group relative hover:-translate-y-1 hover:scale-110 duration-300">
                     <img
                       className="rounded w-48 h-48 shadow-xl mx-auto bg-slate-100 border-double border-4 border-gray-800"
-                      src="images/python.png"
-                      alt="python"
+                      src="images/c-sharp.png"
+                      alt="C#"
                     ></img>
                     <div className="absolute bottom-full left-1/2 z-20 mb-3 -translate-x-1/2 whitespace-nowrap rounded bg-black py-[6px] px-4 text-sm font-semibold text-white transition-opacity duration-150 ease-in opacity-0 group-hover:opacity-100">
                       <span className="absolute bottom-[-3px] left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm bg-black"></span>
-                      Python
+                      C#
                     </div>
                   </div>
                 </div>

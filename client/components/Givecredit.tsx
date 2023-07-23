@@ -14,7 +14,7 @@ function Givecredit() {
                 <p className="text-xl italic font-medium leading-relaxed">
                   A tool to streamline and promote charitable giving in New
                   Zealand by combining a tax calculator with a tax credit
-                  calculator. Made In React using TypeScript and Semantic UI.
+                  calculator. Made In React using TypeScript and Tailwind.
                 </p>
               </blockquote>
 
@@ -33,12 +33,13 @@ function Givecredit() {
                 </li>
               </ul>
               <p className="mt-3 pt-3 border-t">
-                A passion project to explore Semantic UI while building
-                something around what I&apos;m pasionate about - Effective
-                Altruism. An early work in progress, lots of neat maths but the
-                UI needs work.
+                A passion project initially envisioned to explore Semantic UI,
+                later remade in Tailwind. Made to build something around what
+                I&apos;m pasionate about - Effective Altruism. A work in
+                progress, lots of neat maths and React magic but the UI needs
+                refinement.
               </p>
-              <div className="pt-12 mx-auto">
+              <div className="pt-12 mx-auto flex">
                 <form
                   action="https://github.com/Ryan-Kendrick/give-credit"
                   target="_blank"
@@ -58,11 +59,51 @@ function Givecredit() {
                     </svg>
                   </span>
                 </form>
+                <form action="https://give-credit.vercel.app/" target="_blank">
+                  <span className="cursor-pointer inline-block border border-gray-200 bg-gray-200 text-gray-700 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-300 focus:shadow-outline">
+                    <input
+                      className="cursor-pointer"
+                      type="submit"
+                      value="View deployed version"
+                    ></input>
+                  </span>
+                </form>
               </div>
             </div>
           </div>
           <div data-aos="fade-left" className="flex">
             <div className="basis 2/3 relative place-self-center lg:ml-10 pt-10 md:pt-0">
+              {/* <div className="grid grid-cols-2 gap-2">
+                <div>
+                  <img
+                    className="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    className="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    className="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    className="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
+                    alt=""
+                  />
+                </div>
+              </div> */}
+
               <img
                 className="w-full h-full object-center object-cover m-auto"
                 src="images/givecredit2.png"

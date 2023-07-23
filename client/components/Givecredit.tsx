@@ -93,7 +93,7 @@ function Givecredit() {
                   </div>
                 </a>
                 <a href="images/gc3.jpg">
-                  <div className="bg-black rounded-lg">
+                  <div className="bg-black bg-opacity-20 rounded-lg">
                     <img
                       className="h-auto max-w-full max-h-[430px] rounded-lg m-auto"
                       src="images/gc3.jpg"
@@ -102,7 +102,7 @@ function Givecredit() {
                   </div>
                 </a>
                 <a href="images/gc4.jpg">
-                  <div className="bg-black rounded-lg">
+                  <div className="bg-black bg-opacity-20 rounded-lg">
                     <img
                       className="h-auto max-w-full max-h-[430px] rounded-lg m-auto"
                       src="images/gc4.jpg"

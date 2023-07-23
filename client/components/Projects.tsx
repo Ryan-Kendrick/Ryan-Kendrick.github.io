@@ -6,8 +6,8 @@ function Projects() {
   return (
     <section id="portfolio" className="divide-y divide-white divide-dashed">
       <Pingpong />
-      <Veryimportantservice />
       <Givecredit />
+      <Veryimportantservice />
     </section>
   )
 }

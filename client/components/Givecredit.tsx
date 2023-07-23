@@ -14,7 +14,7 @@ function Givecredit() {
                 <p className="text-xl italic font-medium leading-relaxed">
                   A tool to streamline and promote charitable giving in New
                   Zealand by combining a tax calculator with a tax credit
-                  calculator. Made In React using TypeScript and Semantic UI.
+                  calculator. Made In React using TypeScript and Tailwind.
                 </p>
               </blockquote>
 
@@ -33,10 +33,11 @@ function Givecredit() {
                 </li>
               </ul>
               <p className="mt-3 pt-3 border-t">
-                A passion project to explore Semantic UI while building
-                something around what I&apos;m pasionate about - Effective
-                Altruism. An early work in progress, lots of neat maths but the
-                UI needs work.
+                A passion project initially envisioned to explore Semantic UI,
+                later remade in Tailwind. Made to build something around what
+                I&apos;m pasionate about - Effective Altruism. A work in
+                progress, lots of neat maths and React magic but the UI needs
+                refinement.
               </p>
               <div className="pt-12 mx-auto flex">
                 <form
